@@ -21,7 +21,7 @@ function currentLine(line){
   }
   var localCurrentLine = [];
   for (var i = 1; i <= katzDeliLine.length; i++){
-      localCurrentLine.push(`${i}. ${katzDeliLine[i-1]}`);
+      localCurrentLine.push(`${i}. ${line[i-1]}`);
   }
   return (`The line is currently: ${localCurrentLine}`);
 }
