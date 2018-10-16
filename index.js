@@ -23,5 +23,5 @@ function currentLine(line){
   for (var i = 1; i <= line.length; i++){
       queue.push (`${i}. ${line[i-1]}`)
   }
-  return (`The line is currently: ${queue} `)
+  return (`The line is currently: ${ queue } `)
 }
