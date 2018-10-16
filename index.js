@@ -19,9 +19,9 @@ function currentLine(line){
   if (line.length === 0){
       return("The line is currently empty.");
   }
-  var lineLength = [];
-  for (var i = 1; i <= katzDeliLine.length; i++){
-      lineLength.push(`${i}. ${line[i-1]}`);
+  var queue = [];
+  for (var i = 1; i <= line.length; i++){
+      queue.push(`${i}. ${line[i-1]}`);
   }
-  return (`The line is currently: ${linelength}`);
+  return (`The line is currently: ${queue}`);
 }
