@@ -14,3 +14,13 @@ function nowServing(katzDeliLine) {
    }
     return `Welcome, ${name[i]}. You are number ${people[i++]} in line.`
 }
+
+function currentLine(line) {
+  if (line.length > 0){
+    let name = line[0]
+    return (`The line is currently ${i++}.${name[i]}`)
+  }
+  else if (line.length === 0) {
+    return "The line is currently empty."
+  }
+}
